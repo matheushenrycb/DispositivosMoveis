@@ -12,14 +12,15 @@ package Exercicio3b;
 public class Funcionario extends Principal {
 
     int matricula;
-    double salario1=3000;
-    double salario2=2000;
+    double salario1;
+    double salario2;
 
-//    public Funcionario(int matricula,double salario1) {
-//        this.matricula= matricula;
-//        this.salario1 = salario1*0.40 ;
-//        
-//    }
+    public Funcionario(int matricula,double salario1, double salario2) {
+        this.matricula= matricula;
+        this.salario1 = salario1;
+        this.salario2= salario2;
+        
+    }
 
     public int getMatricula() {
         return matricula;
@@ -30,19 +31,19 @@ public class Funcionario extends Principal {
     }
 
     public double getSalario1() {
-        return salario1;
+        return salario1*0.40;
     }
 
     public void setSalario1(double salario1) {
-        this.salario1 = salario1*0.40;
+        this.salario1 = salario1;
     }
 
     public double getSalario2() {
-        return salario1;
+        return salario2*0.60;
     }
 
     public void setSalario2(double salario2) {
-        this.salario2 = salario2- getSalario1();
+        this.salario2 = salario2;
     }
 
     public void getparcelaUm() {
